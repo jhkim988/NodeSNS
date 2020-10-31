@@ -68,7 +68,7 @@ const sessionOption = {
 
 if (process.env.NODE_ENV === 'production') {
     sessionOption.proxy = true; // 중개 서버, Proxy server를 사용할 때만
-    sessionOption.cookie.secure = true; // https
+    // sessionOption.cookie.secure = true; // https
 };
 
 app.use(session(sessionOption));
